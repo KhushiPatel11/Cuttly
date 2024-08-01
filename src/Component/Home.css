@@ -1,0 +1,280 @@
+.absolute-background {
+  position: absolute;
+  inset: 0;
+  z-index: -10;
+  height: 100%;
+  width: 100%;
+  background: white;
+  background: radial-gradient(125% 125% at 50% 10%, #fff 40%, #63e 100%);
+}
+
+.urlShort {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.urlInputContainer {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.urlText {
+  width: 100%;
+  padding: 0.5rem 4rem 0.5rem 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.urlBtn {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 0 4px 4px 0;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #007bff;
+}
+
+.info {
+  text-align: center;
+  padding: 20px;
+}
+
+.animate-fade-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*==== Responsive Styles ====*/
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .img-fluid {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  .text {
+    text-align: center;
+  }
+
+  .urlInputContainer {
+    width: 100%;
+    max-width: none;
+  }
+
+  .urlText {
+    padding: 1.5rem 0rem 1.5rem 1.5rem;
+    border: none; 
+    border-radius: 4rem;
+    outline: none;
+    box-shadow: 0 2rem 2rem -1.5rem rgba(0, 0, 0, 0.5);
+  }
+
+  .urlBtn {
+    padding: 0.5rem 0rem;
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    border-radius: 4rem;
+    right: 0rem;
+    margin-top: 0rem;
+    background-color: rgb(202, 183, 253);
+  }
+
+  .info {
+    text-align: center;
+    padding: 120px 10px;
+  }
+
+  .info .paragraph {
+    text-align: center;
+    padding: 0 10px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .img-fluid {
+    margin-bottom: 1rem;
+  }
+  .text {
+    text-align: center;
+  }
+
+  .urlInputContainer {
+    width: 100%;
+    max-width: none;
+  }
+
+  .urlText {
+    padding: 1.5rem 0rem 1.5rem 1.5rem;
+    border: none;
+    outline: none;
+    border-radius: 4rem;
+    box-shadow: 0 2rem 2rem -1.5rem rgba(0, 0, 0, 0.5);
+  }
+
+  .urlBtn {
+    padding: 0.5rem 0rem;
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    background-color: rgb(202, 183, 253);
+    border-radius: 4rem;
+    right: 0rem;
+    margin-top: 0rem;
+  }
+
+  .info {
+    text-align: center;
+    padding: 20px 15px;
+  }
+
+  .info .paragraph {
+    text-align: center;
+    padding: 0 15px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .img-fluid {
+    margin-top: 3.5rem;
+    margin-left: 4rem;
+  }
+
+  .urlInputContainer {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .urlText {
+    padding: 1.5rem 0rem 1.5rem 1.5rem;
+    border: none;
+    border-radius: 4rem;
+    box-shadow: 0 2rem 2rem -1.5rem rgba(0, 0, 0, 0.5);
+    outline: none;
+  }
+
+  .urlBtn {
+    padding: 0.5rem 0rem;
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    border-radius: 4rem;
+    background-color: rgb(202, 183, 253);
+    right: 0rem;
+    margin-top: 0rem;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  .info {
+    text-align: center;
+    padding: 20px 20px;
+  }
+
+  .info .paragraph {
+    text-align: center;
+    padding: 0 20px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .urlInputContainer {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .urlText {
+    padding: 1.5rem 0rem 1.5rem 1.5rem;
+    border: none;
+    border-radius: 5rem;
+    box-shadow: 0 2rem 2rem -1.5rem rgba(0, 0, 0, 0.5);
+    outline: none;
+  }
+
+  .urlBtn {
+    padding: 0.5rem 0rem;
+    right: 2rem;
+    background-color: rgb(202, 183, 253);
+    border: none;
+    border-radius: 5rem;
+    width: 4rem;
+    height: 4rem;
+    right: 0rem;
+    margin-top: 0rem;
+  }
+
+  .info {
+    text-align: center;
+    padding: 20px 30px;
+  }
+
+  .info .paragraph {
+    text-align: center;
+    padding: 0 30px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .img-fluid {
+    margin-top: 7rem;
+    margin-left: 10rem;
+  }
+
+  .urlBtn:hover::before{
+    width: 100%;
+    visibility: hidden;
+  }
+
+  .urlBtn:hover{
+    background-color: rgb(202, 183, 253);
+  }
+
+  .urlInputContainer {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .urlText {
+    padding: 1.5rem 5rem 1.5rem 1.5rem; 
+    border-radius: 5rem;
+    border: none;
+    box-shadow: 0 2rem 2rem -1.5rem rgba(0, 0, 0, 0.5);
+    outline: none;
+  }
+
+  .urlBtn {
+    padding: 0.5rem 0rem;
+    border-radius: 5rem;
+    background-color: rgb(202, 183, 253);
+    border: none;
+    width: 4rem;
+    height: 4rem;
+    right: 0rem;
+    margin-top: 0rem;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  .info {
+    text-align: center;
+    padding: 40px 40px;
+  }
+
+  .info .paragraph {
+    text-align: center;
+    padding: 0 40px;
+  }
+}
